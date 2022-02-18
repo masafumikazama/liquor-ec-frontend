@@ -25,7 +25,7 @@ module.exports = {
     'react',
     '@typescript-eslint',
   ],
-  "ignorePatterns": [
+  ignorePatterns: [
     ".eslintrc.js"
   ],
   rules: {

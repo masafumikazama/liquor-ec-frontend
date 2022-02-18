@@ -3,6 +3,7 @@ import { VFC } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+  // eslint-disable-next-line react/function-component-definition
   const App: VFC = () => (
     <div className="App">
       <header className="App-header">
