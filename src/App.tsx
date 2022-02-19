@@ -1,3 +1,4 @@
+/* eslint-disable react/no-children-prop */
 import { ChakraProvider } from '@chakra-ui/react';
 import { VFC } from 'react';
 import { BrowserRouter } from 'react-router-dom';
@@ -9,11 +10,12 @@ import { Header } from "./components/organisms/layout/Header";
   // eslint-disable-next-line react/function-component-definition
   const App: VFC = () => (
     <ChakraProvider theme={ theme }>
-      <Header>
+
       <BrowserRouter>
+        <Header children={undefined} />
         <Router />
       </BrowserRouter>
-      </Header>
+
     </ChakraProvider>
   );
 
