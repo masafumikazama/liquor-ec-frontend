@@ -1,4 +1,5 @@
-import { Flex, Heading, Box, useDisclosure, Button } from "@chakra-ui/react"
+import { Flex, Heading, Box, useDisclosure, Button, Input } from "@chakra-ui/react"
+import { SearchIcon } from '@chakra-ui/icons';
 import { VFC, memo, ReactNode, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -20,26 +21,31 @@ return (
 <>
 <Flex
   as="nav"
-  bg="teal.500"
+  bg="orange.300"
   color="gray.50"
   align="center"
   justify="space-between"
-  padding={{ base: 3, md: 5 }}
+  padding={{ base: 12, md: 14 }}
 >
   <Flex align="center" as="a" mr={8} _hover={{ cursor: "pointer" }} onClick={onClickHome}>
-    <Heading as="h1" fontSize={{ base: "md", md: "lg" }}>LIQUOR SHOP MASA</Heading>
+    <Heading as="h1" fontSize={{ base: "xl", md: "2xl" }}>LIQUOR SHOP MASA</Heading>
   </Flex>
+
+  <Box w='30%'>
+    <Input placeholder='Search' bg="white" />
+  </Box>
+  <SearchIcon w={8} h={8} m={2} />
 
   <Flex
     align="center"
+    justify="flex-end"
     fontSize="sm"
     flexGrow={2}
     display={{ base: "none", md: "flex" }}
   >
     <Box pr={4}>
-      <Button colorScheme='red' onClick={onClickCheckout}>Checkout</Button>
+      <Button colorScheme='teal' onClick={onClickCheckout}>Checkout</Button>
     </Box>
-    <Button colorScheme='red' onClick={onClickCheckout}>Checkout</Button>
   </Flex>
   <MenuIconButton onOpen={onOpen}/>
 </Flex>
