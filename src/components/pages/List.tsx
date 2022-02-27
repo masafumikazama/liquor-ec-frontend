@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable react/jsx-no-useless-fragment */
 /* eslint-disable react-hooks/exhaustive-deps */
 import { VFC, memo, useEffect } from "react";
@@ -32,11 +33,12 @@ export const List: VFC = memo(() => {
           <Wrap p={{ base: 4, md: 10 }}>
             {lists.map((list) => (
               <WrapItem key={list.id} mx="auto">
+                {console.log(list)}
                 <ListCard
-                image="https://source.unsplash.com/random"
-                name={list.name}
-                price={list.price}
-              />
+                  // image="https://source.unsplash.com/random"
+                  // id={list.id}
+                  name={list.name}
+                  price={list.price} />
             </WrapItem>
             ))}
           </Wrap>

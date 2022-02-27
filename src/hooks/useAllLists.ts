@@ -2,20 +2,21 @@
 import axios from "axios"
 import { useCallback, useState } from "react"
 
-import { User } from "../types/api/user"
+import { Liquor } from "../types/api/liquor"
 import { useMessage } from "./useMessage"
 
 export const useAllLists = () => {
   const { showMessage } = useMessage()
 
   const [loading, setLoading] = useState(false);
-  const [lists, setLists] = useState<Array<User>>([]);
+  const [lists, setLists] = useState<Array<Liquor>>([]);
 
+  console.log(lists)
   const getLists = useCallback(() => {
     setLoading(true)
     axios
-    .get<Array<User>>("https://jsonplaceholder.typicode.com/users")
-    .then((res) => setLists(res.data) )
+    .get<Array<Liquor>>("http://localhost:3000/api/v1/liquors")
+    .then((res) => setLists(Object.values(res.data).flat(2)) )
     .catch(() => {
       showMessage({ title: "false get Lists", status: "error" })
     }).finally(()=> {
