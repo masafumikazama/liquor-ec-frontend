@@ -37,6 +37,7 @@ export const List: VFC = memo(() => {
                 <ListCard
                   // image="https://source.unsplash.com/random"
                   // id={list.id}
+                  imageUrl={`http://localhost:3000${list.avatar.url}`}
                   name={list.name}
                   price={list.price} />
             </WrapItem>

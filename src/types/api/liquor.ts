@@ -4,4 +4,7 @@ export type Liquor = {
   // types_of: string;
   price: number;
   // country: string;
+  avatar: {
+    url: string;
+  }
 };
