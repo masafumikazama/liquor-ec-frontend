@@ -21,14 +21,14 @@ return (
 <>
 <Flex
   as="nav"
-  bg="orange.300"
+  bgGradient='linear(orange.500 10%, orange.400 20%, orange.300 70%)'
   color="gray.50"
   align="center"
   justify="space-between"
   padding={{ base: 12, md: 14 }}
 >
   <Flex align="center" as="a" mr={8} _hover={{ cursor: "pointer" }} onClick={onClickHome}>
-    <Heading as="h1" fontSize={{ base: "xl", md: "2xl" }}>LIQUOR SHOP MASA</Heading>
+    <Heading as="h1" fontSize={{ base: "xl", md: "2xl" }} color="black">𝕃𝕀ℚ𝕌𝕆ℝ 𝕊ℍ𝕆ℙ 𝕄𝔸𝕊𝔸</Heading>
   </Flex>
 
   <Box w='30%'>
