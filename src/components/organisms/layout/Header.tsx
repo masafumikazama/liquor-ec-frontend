@@ -2,6 +2,8 @@ import { Flex, Heading, Box, useDisclosure, Button, Input } from "@chakra-ui/rea
 import { SearchIcon } from '@chakra-ui/icons';
 import { VFC, memo, ReactNode, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMartiniGlassCitrus } from "@fortawesome/free-solid-svg-icons";
 
 import { MenuIconButton } from "../../atoms/button/MenuIconButton"
 import { MenuDrawer } from "../../molecules/MenuDrawer";
@@ -28,7 +30,7 @@ return (
   padding={{ base: 12, md: 14 }}
 >
   <Flex align="center" as="a" mr={8} _hover={{ cursor: "pointer" }} onClick={onClickHome}>
-    <Heading as="h1" fontSize={{ base: "xl", md: "2xl" }} color="black">𝕃𝕀ℚ𝕌𝕆ℝ 𝕊ℍ𝕆ℙ 𝕄𝔸𝕊𝔸</Heading>
+    <Heading as="h1" fontSize={{ base: "xl", md: "2xl" }} color="black">𝕃𝕀ℚ𝕌𝕆ℝ 𝕊ℍ𝕆ℙ 𝕄𝔸𝕊𝔸<FontAwesomeIcon icon={faMartiniGlassCitrus} /></Heading>
   </Flex>
 
   <Box w='30%'>
