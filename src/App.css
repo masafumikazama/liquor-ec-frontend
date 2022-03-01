@@ -36,3 +36,44 @@
     transform: rotate(360deg);
   }
 }
+
+.slide {/*親div*/
+  position: relative;/*相対配置*/
+  }
+
+.slidetitle {
+  position: absolute;/*絶対配置*/
+  color: #fff;
+  font-size: 45px !important;
+  text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+  top: 60%;
+  left: 30%;
+  transform: translate(-70%, -30%);
+  }
+
+.slidesubtitle {
+  position: absolute;/*絶対配置*/
+  color: #fff;
+  font-size: 25px !important;
+  text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+  top: 70%;
+  left: 54%;
+  transform: translate(-75%, -31%);
+}
+
+.slidesubtitle2 {
+  position: absolute;/*絶対配置*/
+  color: #fff;
+  font-size: 25px !important;
+  text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+  top: 75%;
+  left: 54%;
+  transform: translate(-75%, -31%);
+}
+
+.slide img {
+  display: block;
+  height: 600px;
+  margin: auto;
+  width: 900px;
+ }
