@@ -10,7 +10,7 @@ export const Home: VFC = memo(() =>
   <Carousel
     additionalTransfrom={0}
     arrows
-    autoPlaySpeed={5000}
+    autoPlaySpeed={4000}
     centerMode={false}
     className=""
     containerClass="container"

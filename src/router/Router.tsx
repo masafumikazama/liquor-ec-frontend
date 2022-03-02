@@ -7,10 +7,14 @@ import { ViewCart } from "../components/pages/ViewCart";
 import { CheckoutOption } from "../components/pages/CheckoutOption";
 import { Payment } from "../components/pages/Payment";
 import { Page404 } from "../components/pages/Page404";
+import { BeerList } from "../components/pages/BeerList";
+import { WhiskeyList } from "../components/pages/WhiskeyList";
 
 export const Router: VFC = memo(() =>
   <Routes>
     <Route path="/" element={<List />} />
+    <Route path="/beer" element={<BeerList />} />
+    <Route path="/whiskey" element={<WhiskeyList />} />
     <Route path="/home" element={<Home />} />
     <Route path="/view_cart" element={<ViewCart />} />
     <Route path="/checkout_option" element={<CheckoutOption />} />
