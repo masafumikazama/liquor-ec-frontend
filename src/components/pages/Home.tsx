@@ -69,23 +69,5 @@ export const Home: VFC = memo(() =>
       <p className="slidesubtitle">Candy is dandy, but liquor is quicker.</p>
       <p className="slidesubtitle2">Civilization begins with distillation.</p>
     </div>
-    {/* <img
-      src={`${process.env.PUBLIC_URL}/image/RedWine.jpg`}
-      style={{
-        display: 'block',
-        height: '80%',
-        margin: 'auto',
-        width: '70%'
-      }}
-    />
-    <img
-      src={`${process.env.PUBLIC_URL}/image/whisky.jpg`}
-      style={{
-        display: 'block',
-        height: '80%',
-        margin: 'auto',
-        width: '70%'
-      }}
-    /> */}
   </Carousel>
 );
